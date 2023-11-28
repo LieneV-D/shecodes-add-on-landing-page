@@ -3,112 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomato planting</title>
+    <title>I love tomatoes 🍅</title>
+    <style>
+      body {
+        background-color: rgb(242, 184, 184);
+      }
+
+      .dark-mode {
+        background-color: rgb(188, 48, 46);
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+        background-color: rgb(255, 255, 255, 0.5);
+        border-radius: 10px;
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      footer {
+        text-align: center;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      .recipe-internal-link {
+        display: block;
+        margin: 0 auto;
+      }
+      img {
+        max-width: 100%;
+      }
+      strong {
+        color: rgb(188, 48, 46);
+      }
+      .recipe-container {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 600px;
+        background-color: rgb(255, 255, 255, 0.6);
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .ingredients {
+        list-style-type: none;
+      }
+      .dark-mode-button,
+      .order-button {
+        text-align: center;
+      }
+      button {
+        padding: 20px 25px;
+        border-radius: 10px;
+        border: 1px, solid;
+        border-color: rgb(188, 48, 46);
+        cursor: pointer;
+        background-color: rgb(188, 48, 46);
+        color: rgb(248, 219, 220);
+        font-size: 18px;
+        transition: all 155ms ease-in-out;
+      }
+      footer {
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: rgb(248, 219, 220, 0.6);
+        max-width: 999px;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
-    <button>Dark mode</button>
-    <header>
-      <h1>🍅 Growing tomatoes 🍅</h1>
-      <h2>My favourite summer hobby</h2>
-      <a href="#recipe">Jump to recipe</a>
-    </header>
-    <img
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/217/original/lars-blankers-6Z7Ss9jlEL0-unsplash.jpg?1701180149"
-      alt="400"
-      width="400"
-    />
-    <div>
+    <div class="dark-mode-button"><button>Dark mode</button></div>
+    <div class="container">
+      <header>
+        <h1>🍅 Growing tomatoes 🍅</h1>
+        <h2>My favourite summer hobby</h2>
+        <a href="#recipe" class="recipe-internal-link">Jump to recipe</a>
+      </header>
       <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/216/original/engin-akyurt-eb26eV-ys_k-unsplash.jpg?1701179467"
-        alt="400"
-        width="400"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/217/original/lars-blankers-6Z7Ss9jlEL0-unsplash.jpg?1701180149"
+        alt=""
       />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/213/original/olga-rh6oAbCtnAM-unsplash.jpg?1701179373"
-        alt="400"
-        width="400"
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/218/original/valentina-ivanova--Ghl1qbbfAA-unsplash.jpg?1701180269"
-        alt="400"
-        width="400"
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/215/original/rodion-kutsaiev-EPwuZxdketc-unsplash.jpg?1701179398"
-        alt="400"
-        width="400"
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/214/original/markus-spiske-3rGrIigBq8Q-unsplash.jpg?1701179386"
-        alt="400"
-        width="400"
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/219/original/anne-preble-SAPvKo12dQE-unsplash.jpg?1701180462"
-        alt="400"
-        width="400"
-      />
-    </div>
-    <main>
-      <p>
-        It is easy to grow tomatoes at home, even if you do not have a
-        greenhouse, you can grow them on balcony or on your porch. Tomatoes grow
-        well in containers, but remember to
-        <a
-          href="https://www.thespruce.com/guide-to-fertilizing-tomatoes-7151680"
-          >fertilize</a
-        >
-        them more often when they are grown in containers. Check out these
-        awesome tomato growing tips
-        <a
-          href="https://www.almanac.com/10-secrets-growing-tomatoes"
-          target="_blank"
-          >here.</a
-        >
-        I grow my tomato plants from seed each year, but if you are just
-        strating your tomatoe growing journey, I would suggest to buy tomato
-        plants from your local plant nursery.
-      </p>
-
-      <button>Order tomato seeds</button>
       <div>
-        <h3 id="recipe">My awesome tomato soup recipe 🍅🍅🍅</h3>
-        <p>
-          Ingredients: 1 kg ripe tomatoes 1 large fennel bulb 2 large red bell
-          peppers 2 yellow onions 1 head of garlic 1 small summer squash Olive
-          oil Salt, to taste Pepper, to taste 1 l of good quality vegetable
-          stock Rosemary Parsley Basil For serving: Garlic bread Parmesan cheese
-          Method:
-        </p>
-        <ol>
-          <li>Preheat your oven to 200°C (390°F).</li>
-          <li>
-            Wash and chop tomatoes, fennel, bell peppers, summer squash, onions.
-            Chop the top off your garlic, drizzle with olive oil and add a
-            little bit of salt, then wrap it in aluminum foil.
-          </li>
-          <li>
-            Place your prepared veggies in a roasting pan, drizzle with olive
-            oil, add salt and pepper. Add parsley, rosemary, and half of the
-            basil. Put the aluminum foil wrapped garlic in the roasting pan with
-            all the veggies.
-          </li>
-          <li>Roast in the oven for about 40-50 min. Toss halfway through.</li>
-          <li>
-            Place your roasted veggies and herbs in a heavy bottom pot, squeeze
-            in your roasted garlic. Do not forget to add the juices from the
-            bottom of your roasting pan. Add vegetable stock and simmer for 15
-            min.
-          </li>
-          <li>
-            Before blending the soup, add the rest of the basil. Blend with
-            immersion blender until smooth. Serve with garlic bread and grated
-            parmesan cheese.
-          </li>
-        </ol>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/216/original/engin-akyurt-eb26eV-ys_k-unsplash.jpg?1701179467"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/213/original/olga-rh6oAbCtnAM-unsplash.jpg?1701179373"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/218/original/valentina-ivanova--Ghl1qbbfAA-unsplash.jpg?1701180269"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/215/original/rodion-kutsaiev-EPwuZxdketc-unsplash.jpg?1701179398"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/214/original/markus-spiske-3rGrIigBq8Q-unsplash.jpg?1701179386"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/219/original/anne-preble-SAPvKo12dQE-unsplash.jpg?1701180462"
+          alt=""
+        />
       </div>
-    </main>
+      <main>
+        <p>
+          It is easy to grow tomatoes at home, even if you do not have a
+          greenhouse, you can grow them on balcony or on your porch. Tomatoes
+          grow well in containers, but remember to
+          <a
+            href="https://www.thespruce.com/guide-to-fertilizing-tomatoes-7151680"
+            >fertilize</a
+          >
+          them more often when they are grown in containers. Check out these
+          awesome tomato growing tips
+          <a
+            href="https://www.almanac.com/10-secrets-growing-tomatoes"
+            target="_blank"
+            >here.</a
+          >
+          I grow my tomato plants from seed each year, but if you are just
+          strating your tomatoe growing journey, I would suggest to buy tomato
+          plants from your local plant nursery.
+        </p>
 
+        <div class="order-button"><button>Order tomato seeds</button></div>
+        <div class="recipe-container">
+          <h3 id="recipe">My awesome tomato soup recipe 🍅🍅🍅</h3>
+          <section class="recipe-text-container">
+            <strong> Ingredients:</strong>
+            <ul class="ingredients">
+              <li class="ingredients">1 kg ripe tomatoes</li>
+              <li class="ingredients">1 large fennel bulb</li>
+              <li class="ingredients">2 large red bell peppers</li>
+              <li class="ingredients">2 yellow onions</li>
+              <li class="ingredients">1 head of garlic</li>
+              <li class="ingredients">1 small summer squash</li>
+              <li class="ingredients">Olive oil</li>
+              <li class="ingredients">Salt, to taste</li>
+              <li class="ingredients">Pepper, to taste</li>
+              <li class="ingredients">1 l of good quality vegetable stock</li>
+              <li class="ingredients">Rosemary</li>
+              <li class="ingredients">Parsley</li>
+              <li class="ingredients">Basil</li>
+            </ul>
+            <strong> For serving:</strong>
+            <ul>
+              <li class="ingredients">Garlic bread</li>
+              <li class="ingredients">Parmesan cheese</li>
+            </ul>
+
+            <strong>Method:</strong>
+
+            <ol>
+              <li>Preheat your oven to 200°C (390°F).</li>
+              <li>
+                Wash and chop tomatoes, fennel, bell peppers, summer squash,
+                onions. Chop the top off your garlic, drizzle with olive oil and
+                add a little bit of salt, then wrap it in aluminum foil.
+              </li>
+              <li>
+                Place your prepared veggies in a roasting pan, drizzle with
+                olive oil, add salt and pepper. Add parsley, rosemary, and half
+                of the basil. Put the aluminum foil wrapped garlic in the
+                roasting pan with all the veggies.
+              </li>
+              <li>
+                Roast in the oven for about 40-50 min. Toss halfway through.
+              </li>
+              <li>
+                Place your roasted veggies and herbs in a heavy bottom pot,
+                squeeze in your roasted garlic. Do not forget to add the juices
+                from the bottom of your roasting pan. Add vegetable stock and
+                simmer for 15 min.
+              </li>
+              <li>
+                Before blending the soup, add the rest of the basil. Blend with
+                immersion blender until smooth. Serve with garlic bread and
+                grated parmesan cheese.
+              </li>
+            </ol>
+            Bon Appétit!
+          </section>
+        </div>
+      </main>
+    </div>
     <footer>
       <small
         >Coded with 🧡 for 🍅 by Liene Vecvagare, open-sourced on
