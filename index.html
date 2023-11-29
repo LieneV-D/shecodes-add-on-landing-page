@@ -95,36 +95,52 @@
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 50px;
         padding-top: 20px;
+        text-transform: uppercase;
       }
       .h1-text,
       h2 {
         color: rgb(100, 88, 88);
         font-weight: 700;
       }
+      h3 {
+        text-transform: uppercase;
+      }
       h4 {
         font-size: 20px;
         margin-top: 0;
+        text-transform: uppercase;
       }
       h5 {
         margin-top: 0;
         font-size: 15px;
       }
+      a {
+        color: rgb(181, 85, 85);
+        cursor: pointer;
+        background-color: transparent;
+        text-decoration: none;
+        font-weight: 600;
+      }
       .internal-links {
         display: block;
         text-align: center;
         font-size: larger;
+        padding-top: 25px;
+        padding-bottom: 25px;
       }
       .recipe-internal-link {
-        padding-right: 400px;
+        padding-right: 150px;
+      }
+      .decsription-internal-link {
+        padding-right: 150px;
       }
       img {
         max-width: 100%;
       }
       .tomato-picture-main {
         border-radius: 50%;
-
         transition: all 155ms ease-in-out;
         display: block;
         margin: 0 auto;
@@ -132,8 +148,8 @@
       }
 
       .tomato-picture-main:hover {
+        transition: scale(1.5);
         filter: contrast(60%);
-        transition: scale(1.2);
       }
 
       .grid {
@@ -199,12 +215,13 @@
         background-color: rgb(219, 131, 131);
       }
       .dark-mode-button {
-        margin-top: 40px;
+        margin-top: 30px;
       }
       .order-button {
         margin-bottom: 30px;
       }
-      .bon-appetit {
+      .bon-appetit,
+      .happy-growing {
         text-align: center;
         text-transform: uppercase;
       }
@@ -284,6 +301,12 @@
         transform: rotate(45deg);
       }
 
+      .internal-link-back-to-top {
+        display: block;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
       .tomato-icons-bottom {
         text-align: center;
         font-size: 18px;
@@ -303,18 +326,12 @@
       }
     </style>
   </head>
-  <body>
+  <body id="top">
     <div class="dark-mode-button"><button>Change theme</button></div>
     <div class="container">
       <header>
         <h1>🍅 <span class="h1-text">Growing tomatoes </span>🍅</h1>
         <h2>My favourite summer hobby</h2>
-        <div class="internal-links">
-          <a href="#recipe" class="recipe-internal-link">Jump to recipe</a>
-          <a href="#check-list" class="check-list-internal-link"
-            >Jump to check-list</a
-          >
-        </div>
       </header>
       <a
         href="https://bonnieplants.com/blogs/how-to-grow/growing-tomatoes"
@@ -324,6 +341,15 @@
           alt=""
           class="tomato-picture-main"
       /></a>
+      <div class="internal-links">
+        <a href="#recipe" class="recipe-internal-link">Jump to recipe</a>
+        <a href="#description" class="decsription-internal-link"
+          >Jump to description</a
+        >
+        <a href="#check-list" class="check-list-internal-link"
+          >Jump to check-list</a
+        >
+      </div>
       <div class="grid">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/216/original/engin-akyurt-eb26eV-ys_k-unsplash.jpg?1701179467"
@@ -351,7 +377,7 @@
         />
       </div>
       <main>
-        <p>
+        <p id="description">
           The
           <a href="https://en.wikipedia.org/wiki/Tomato" target="_blank"
             >tomato</a
@@ -381,6 +407,41 @@
           I grow my tomato plants from seed each year, but if you are just
           starting your tomatoe growing journey, I would suggest to buy tomato
           plants from your local plant nursery.
+          <br />
+          <br />
+          <a href="https://www.rhs.org.uk/vegetables/tomatoes/grow-your-own"
+            >Tomatoes</a
+          >
+          do need some attention to grow well, including protection from frost,
+          and regular watering and fertilization. Tomatoes are tender and need
+          to Gradually acclimatising tender or indoor-raised plants to outdoor
+          conditions, to toughen them up and prevent a check in growth. Place
+          plants outside in a sheltered spot during the day then bring indoors
+          at night for a couple of weeks. Or place in a coldframe, opening the
+          lid during the day. harden off before being planted out. Do this by
+          putting them in a Cold frames are glaze box-like structures made from
+          brick or wood with a hinged or removable, glazed, sloping lid. Useful
+          to protect plants from cold weather over winter or acclimatise (harden
+          off) young plants in spring and provide extra warmth for tender crops
+          in summer. Mulch news cold frame for a week. If you don’t have a cold
+          frame, place them outdoors during the day, then bring in at night for
+          a week, then the following week, leave them out in a sheltered spot
+          all day and night.
+          <br />
+          <br />
+          Tomatoes are usually planted in large containers or growing bags in a
+          greenhouse or outdoors. They can also be planted in the ground, either
+          in a greenhouse border or outdoors. When grown outdoors they need a
+          really warm, sunny, sheltered location. Plant tomatoes deeply, so the
+          first set of leaves is just above the soil surface. Firm in, then
+          water well. Space plants 45–60cm (18–24in) apart, depending on the
+          eventually size – check seed packets for exact spacings.
+          <br />
+          <br />
+          Over the years, I have been perfecting my tomato soup recipe, please
+          see it below. It is a crowd pleaser! You will also find a begginers
+          check-list for all the tools you will need to grow your first
+          tomatoes.
         </p>
 
         <div class="order-button"><button>Order tomato seeds</button></div>
@@ -447,6 +508,7 @@
           more recipes
           <a
             href="https://www.olivemagazine.com/recipes/collection/best-tomato-recipes/"
+            target="_blank"
             >here!</a
           >
         </section>
@@ -508,15 +570,19 @@
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
+            <div class="happy-growing">Happy growing!</div>
           </section>
         </div>
+        <a href="#top" class="internal-link-back-to-top">Go back to top</a>
         <div class="tomato-icons-bottom">🍅🍅🍅</div>
         <br />
       </main>
     </div>
     <footer>
       Coded with 🧡 for 🍅 by Liene Vecvagare, open-sourced on
-      <a href="https://github.com/LieneV-D/shecodes-add-on-landing-page"
+      <a
+        href="https://github.com/LieneV-D/shecodes-add-on-landing-page"
+        target="_blank"
         >GitHub</a
       >
     </footer>
@@ -532,6 +598,14 @@
 
       let darkModeButton = document.querySelector(".dark-mode-button");
       darkModeButton.addEventListener("click", changePageTheme);
+
+      function greetUser() {
+        prompt("What is your name?");
+        prompt("What is your e-mail?");
+      }
+
+      let orderButton = document.querySelector(".order-button");
+      orderButton.addEventListener("click", greetUser);
     </script>
   </body>
 </html>
