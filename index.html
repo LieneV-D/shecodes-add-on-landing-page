@@ -600,8 +600,12 @@
       darkModeButton.addEventListener("click", changePageTheme);
 
       function greetUser() {
-        prompt("What is your name?");
+        let name = prompt("What is your name?");
+        name = name.trim();
         prompt("What is your e-mail?");
+        alert(
+          `Thank you, ${name} we will send you our seed catalog shortly! Have a lovely day! 🍅`
+        );
       }
 
       let orderButton = document.querySelector(".order-button");
