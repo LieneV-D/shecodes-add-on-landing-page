@@ -6,7 +6,11 @@
     <title>I love tomatoes 🍅</title>
     <style>
       body {
-        background-color: rgb(119, 32, 32);
+        background-color: rgb(181, 85, 85);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin: 0;
+        padding: 0;
       }
 
       .dark-mode {
@@ -14,11 +18,12 @@
       }
       .dark-mode .container {
         background-color: rgb(155, 108, 108, 0.9);
-        box-shadow: 10px 10px 20px rgba(231, 156, 166, 0.2);
+        box-shadow: -3px -3px 20px 12px rgba(231, 156, 166, 0.2);
       }
       .dark-mode footer {
         background-color: rgb(155, 108, 108, 0.9);
         color: rgb(255, 255, 255, 0.6);
+        box-shadow: -3px -3px 20px 12px rgba(231, 156, 166, 0.2);
       }
       .dark-mode .h1-text {
         color: rgb(255, 255, 255, 0.6);
@@ -70,6 +75,7 @@
         max-width: 900px;
         background-color: rgb(248, 219, 220, 0.9);
         border-radius: 10px;
+        box-shadow: -3px -3px 20px 12px rgba(255, 255, 255, 0.3);
       }
       h1,
       h2,
@@ -82,13 +88,15 @@
       p {
         font-size: 18px;
         line-height: 1.5;
-        padding: 15px;
+        padding: 20px 30px 15px 30px;
         color: rgb(100, 88, 88);
         font-weight: 700;
+        text-align: justify;
       }
 
       h1 {
-        font-size: 50px;
+        font-size: 60px;
+        padding-top: 20px;
       }
       .h1-text,
       h2 {
@@ -129,7 +137,7 @@
       }
 
       .grid {
-        margin: 15px 15px 15px 15px;
+        margin: 15px 15px 15px 9px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
@@ -163,7 +171,7 @@
         line-height: 1.5;
         border-style: dotted;
         border-color: rgb(188, 48, 46, 0.6);
-        box-shadow: 10px 10px 20px rgba(141, 28, 45, 0.2);
+        box-shadow: -3px -3px 20px 12px rgba(141, 28, 45, 0.2);
         color: rgb(100, 88, 88);
         font-weight: 700;
       }
@@ -179,7 +187,7 @@
         padding: 20px 25px;
         border-radius: 25px;
         border: none;
-        border-color: rgb(188, 48, 46);
+        font-weight: 600;
         cursor: pointer;
         background-color: rgb(188, 48, 46);
         color: rgb(248, 219, 220);
@@ -187,7 +195,9 @@
         transition: all 195ms ease-in-out;
         box-shadow: 10px 10px 20px rgba(141, 28, 45, 0.2);
       }
-
+      button:hover {
+        background-color: rgb(219, 131, 131);
+      }
       .dark-mode-button {
         margin-top: 40px;
       }
@@ -220,7 +230,7 @@
         line-height: 1.5;
         border-style: dotted;
         border-color: rgb(188, 48, 46, 0.6);
-        box-shadow: 10px 10px 20px rgba(141, 28, 45, 0.2);
+        box-shadow: -3px -3px 20px 12px rgba(141, 28, 45, 0.2);
         color: rgb(100, 88, 88);
         font-weight: 700;
       }
@@ -280,18 +290,21 @@
       }
       footer {
         margin: 0 auto;
-        border-radius: 10px;
+        margin-right: 0;
         background-color: rgb(248, 219, 220, 0.9);
-        max-width: 100%;
-        padding: 10px;
-        margin-top: 15px;
+        margin: 0;
+        padding: 0;
+        padding: 15px;
+        margin-top: 35px;
+        margin-bottom: 35px;
         color: rgb(100, 88, 88);
         font-weight: 700;
+        box-shadow: -3px -3px 20px 12px rgba(255, 288, 299, 0.3);
       }
     </style>
   </head>
   <body>
-    <div class="dark-mode-button"><button>Dark mode</button></div>
+    <div class="dark-mode-button"><button>Change theme</button></div>
     <div class="container">
       <header>
         <h1>🍅 <span class="h1-text">Growing tomatoes </span>🍅</h1>
@@ -307,7 +320,7 @@
         href="https://bonnieplants.com/blogs/how-to-grow/growing-tomatoes"
         target="_blank"
         ><img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/248/original/tomatoes_helios4eos_gettyimages-edit_-_square.jpg?1701191899"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/333/original/Dark-Tomato-Styling-small-scaled.jpg?1701263129"
           alt=""
           class="tomato-picture-main"
       /></a>
@@ -339,6 +352,18 @@
       </div>
       <main>
         <p>
+          The
+          <a href="https://en.wikipedia.org/wiki/Tomato" target="_blank"
+            >tomato</a
+          >
+          is the edible berry of the plant Solanum lycopersicum, commonly known
+          as the tomato plant. The species originated in western South America,
+          Mexico, and Central America. The Nahuatl word tomatl gave rise to the
+          Spanish word tomate, from which the English word tomato derived. Its
+          domestication and use as a cultivated food may have originated with
+          the indigenous peoples of Mexico.
+          <br />
+          <br />
           It is easy to grow tomatoes at home, even if you do not have a
           greenhouse, you can grow them on balcony or on your porch. Tomatoes
           grow well in containers, but remember to
@@ -354,7 +379,7 @@
             >here.</a
           >
           I grow my tomato plants from seed each year, but if you are just
-          strating your tomatoe growing journey, I would suggest to buy tomato
+          starting your tomatoe growing journey, I would suggest to buy tomato
           plants from your local plant nursery.
         </p>
 
@@ -490,17 +515,19 @@
       </main>
     </div>
     <footer>
-      <small
-        >Coded with 🧡 for 🍅 by Liene Vecvagare, open-sourced on
-        <a href="https://github.com/LieneV-D/shecodes-add-on-landing-page"
-          >GitHub</a
-        ></small
+      Coded with 🧡 for 🍅 by Liene Vecvagare, open-sourced on
+      <a href="https://github.com/LieneV-D/shecodes-add-on-landing-page"
+        >GitHub</a
       >
     </footer>
     <script>
       function changePageTheme() {
         let body = document.querySelector("body");
-        body.classList.add("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          body.classList.remove("dark-mode");
+        } else {
+          body.classList.add("dark-mode");
+        }
       }
 
       let darkModeButton = document.querySelector(".dark-mode-button");
